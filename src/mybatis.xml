@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--将数据库空操作设置为mybatis对应的NULL-->
+    <settings>
+        <setting name="jdbcTypeForNull" value="NULL"/>
+    </settings>
+    <typeAliases>
+        <package name="com.etc.personhome.entity"></package>
+    </typeAliases>
+   <mappers>
+       <mapper resource="com\\etc\\personhome\\mapper\\personMapper.xml"></mapper>
+   </mappers>
+</configuration>
